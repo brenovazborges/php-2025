@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bytesized&display=swap');
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+  font-family: "Bytesized", sans-serif;
+  font-weight: 400;
+  font-style: normal;  margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1{
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    margin-top: 5vh;
 }
 
 .container {
@@ -11,7 +21,7 @@
   justify-content: center;
   gap: 50px;
   align-items: center;
-  margin-top: 20svh;
+  margin-top: 5svh;
 }
 
 .container__aside {
@@ -23,6 +33,9 @@
   flex-flow: column;
   width: 700px;
   gap: 20px;
+  padding: 20px;
+  background-color: rgb(51, 168, 143);
+  border-radius: 10px;
 }
 
 .container__item {
@@ -31,15 +44,18 @@
 }
 
 .container__item-label {
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(236, 243, 243);
 }
 
 .container__item-input {
   height: 40px;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 10px;
   padding-left: 20px;
   font-size: 20px;
+  margin-right: 10px;
 }
 
 .buttons {
@@ -53,20 +69,47 @@
   width: 150px;
   height: 50px;
   font-size: 30px;
-  border: 1px solid #252859;
-  border-radius: 10px;
-  background-color: #252859;
+  border: 1px solid #08090f;
+  border-radius: 4px;
+  background-color: rgb(25, 85, 87);
   color: white;
   box-shadow: 0px 1px 3px black;
 }
 
 .buttons > a {
   text-decoration: none;
-  color: black;
+  color: black; 
   font-size: 30px;
-  border: 1px solid #6db4f2;
+  border: 1px solid rgb(70, 136, 161);
   padding: 6px 20px;
-  border-radius: 10px;
-  background-color: #6db4f2;
+  border-radius: 5px;
+  color: rgb(248, 248, 248);
+  background-color: rgb(33, 75, 99);
   box-shadow: 0px 1px 3px black;
+}
+
+@media (max-width: 750px){
+
+.container__aside{
+  display: none;
+}
+
+h1{
+  margin-top: 5vh;
+  font-size: 40px;
+}
+
+.container__form{
+  width: 350px;
+  gap: 40px;
+
+}
+
+.buttons {
+  gap: 25px;
+}
+
+
+
+
 }
